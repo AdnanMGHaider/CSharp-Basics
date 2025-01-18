@@ -142,29 +142,29 @@
             //Console.WriteLine(name);
 
             /////Modulus/////
-            int firstNum = 10;
-            int secondNum = 3;
+            //int firstNum = 10;
+            //int secondNum = 3;
 
-            Console.WriteLine(firstNum / secondNum);
-            Console.WriteLine(firstNum % secondNum);
+            //Console.WriteLine(firstNum / secondNum);
+            //Console.WriteLine(firstNum % secondNum);
 
             /////Var Keyword: Type is inferred at compile time/////
-            var age = 23;
-            var bigNumber = 900000L;
-            var negative = -55.2D;
-            var precision = 5.00000001F;
-            var money = 14.99M;
-            var name = "Adnan";
-            var letter = "A";
+            //var age = 23;
+            //var bigNumber = 900000L;
+            //var negative = -55.2D;
+            //var precision = 5.00000001F;
+            //var money = 14.99M;
+            //var name = "Adnan";
+            //var letter = "A";
 
             /////Const/////
-            const int vat = 20;
-            Console.WriteLine(vat);
+            //const int vat = 20;
+            //Console.WriteLine(vat);
             //vat = 30; //Cannot reassign
 
-            int balance = 1000;
+            //int balance = 1000;
 
-            Console.WriteLine(balance * (vat / 100D));
+            //Console.WriteLine(balance * (vat / 100D));
 
             //Exercise 1
             /*
@@ -177,15 +177,15 @@
              */
 
 
-            string myName = "Adnan";
+            //string myName = "Adnan";
             //The reason the number is stored as a string is so that if the first number is 0,
             //it does not get cut out.
-            string myNumber = "26732550";
-            int myAge = 33;
+            //string myNumber = "26732550";
+            //int myAge = 33;
 
-            Console.WriteLine(myName);
-            Console.WriteLine(myNumber);
-            Console.WriteLine(myAge);
+            //Console.WriteLine(myName);
+            //Console.WriteLine(myNumber);
+            //Console.WriteLine(myAge);
 
 
             //Exercise 2
@@ -198,15 +198,27 @@
                 * output new remainder to the screen
              */
 
-            int num1 = 7;
-            int num2 = 3;
+            //int num1 = 7;
+            //int num2 = 3;
 
-            int remainder = num1 % num2;
-            Console.WriteLine(remainder);
+            //int remainder = num1 % num2;
+            //Console.WriteLine(remainder);
 
-            num1 = 12;
-            remainder = num1 % num2;
-            Console.WriteLine(remainder);
+            //num1 = 12;
+            //remainder = num1 % num2;
+            //Console.WriteLine(remainder);
+
+            /////Console Input/Output/////
+            Console.WriteLine("Enter your name: ");
+            string name = Console.ReadLine();
+            Console.WriteLine("Your name is " + name);
+
+            //Console.Write() Does not push everything after to the next line.
+            Console.Write("Enter your age: ");
+            int age = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Your age is " + age);
+
+            Console.WriteLine("Your name is " + name + " and your age is " + age);
         }
     }
 }
