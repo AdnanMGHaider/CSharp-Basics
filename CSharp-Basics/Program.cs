@@ -566,39 +566,39 @@ To use a method, you need to:
 */
 
 //Method without parameters and without return type:
-public void Add()
-{
-    int a = 10;
-    int b = 20;
+//public void Add()
+//{
+//    int a = 10;
+//    int b = 20;
 
-    int sum = a + b;
+//    int sum = a + b;
 
-    Console.WriteLine("Sum is " + sum);
-}
+//    Console.WriteLine("Sum is " + sum);
+//}
 
 //Method with parameters and without return type:
-public void Add(int x, int y)
-{
-    int sum = x + y;
-    Console.WriteLine("Sum is " + sum);
-}
+//public void Add(int x, int y)
+//{
+//    int sum = x + y;
+//    Console.WriteLine("Sum is " + sum);
+//}
 
 //Method without parameters and with return type:
-public int Add()
-{
-    int x = 10;
-    int y = 20;
-    int sum = x + y;
+//public int Add()
+//{
+//    int x = 10;
+//    int y = 20;
+//    int sum = x + y;
 
-    return sum;
-}
+//    return sum;
+//}
 
 //Method with parameters and with return type
-public int Add(int x, int y)
-{
-    int sum = x + y;
-    return sum;
-}
+//public int Add(int x, int y)
+//{
+//    int sum = x + y;
+//    return sum;
+//}
 
 /////Method Parameters/////
 //Value Parameters
@@ -607,180 +607,180 @@ public int Add(int x, int y)
 //Parameter Array
 
 //Example of Passing By Value and Reference    
-namespace CSharp_Basics
-{
-    internal class Program
-    {
-        static void Main(string[] args)
-        {
-            int i = 0;
-            string s = "hello";
-            int[] a = { 0, 1, 2, 4, 8 };
+//namespace CSharp_Basics
+//{
+//    internal class Program
+//    {
+//        static void Main(string[] args)
+//        {
+//            int i = 0;
+//            string s = "hello";
+//            int[] a = { 0, 1, 2, 4, 8 };
 
-            Console.WriteLine("Before Changes: ");
-            Console.WriteLine("i = " + i);
-            Console.WriteLine("s = " + s);
-            Console.WriteLine("a[0] = " + a[0]);
+//            Console.WriteLine("Before Changes: ");
+//            Console.WriteLine("i = " + i);
+//            Console.WriteLine("s = " + s);
+//            Console.WriteLine("a[0] = " + a[0]);
 
-            ChangeValues(i, s, a);
-            Console.WriteLine("\nAfter Changes:");
-            Console.WriteLine("i = " + i);
-            Console.WriteLine("s = " + s);
-            Console.WriteLine("a[0] = " + a[0]);
-        }
+//            ChangeValues(i, s, a);
+//            Console.WriteLine("\nAfter Changes:");
+//            Console.WriteLine("i = " + i);
+//            Console.WriteLine("s = " + s);
+//            Console.WriteLine("a[0] = " + a[0]);
+//        }
 
-        static void ChangeValues(int num, string str, int[] array)
-        {
-            num = 100;
-            str = "bye";
-            array[0] = 100;
-        }
+//        static void ChangeValues(int num, string str, int[] array)
+//        {
+//            num = 100;
+//            str = "bye";
+//            array[0] = 100;
+//        }
 
-    }
+//    }
 
-}
+//}
 
 //Example of Passing Parameters by Value
-namespace CSharp_Basics
-{
-    internal class Program
-    {
-        static void Main(string[] args)
-        {
-            int a = 10, b = 20;
+//namespace CSharp_Basics
+//{
+//    internal class Program
+//    {
+//        static void Main(string[] args)
+//        {
+//            int a = 10, b = 20;
 
-            Console.WriteLine("Before swapping:");
-            Console.WriteLine("a: " + a);
-            Console.WriteLine("b: " + b);
-        }
+//            Console.WriteLine("Before swapping:");
+//            Console.WriteLine("a: " + a);
+//            Console.WriteLine("b: " + b);
+//        }
 
-        static void Swap(int x, int y)
-        {
-            int temp = x;
-            x = y;
-            y = temp;
-        }
+//        static void Swap(int x, int y)
+//        {
+//            int temp = x;
+//            x = y;
+//            y = temp;
+//        }
 
-        //Output:
-        //Before swapping:
-        //a: 10
-        //b: 20
-        //After swapping:
-        //a: 10
-        //b: 20
+//        //Output:
+//        //Before swapping:
+//        //a: 10
+//        //b: 20
+//        //After swapping:
+//        //a: 10
+//        //b: 20
 
-    }
+//    }
 
-}
+//}
 
 //Example of Passing Parameters by Reference
-namespace CSharp_Basics
-{
-    internal class Program
-    {
-        static void Main(string[] args)
-        {
-            int a = 10, b = 20;
+//namespace CSharp_Basics
+//{
+//    internal class Program
+//    {
+//        static void Main(string[] args)
+//        {
+//            int a = 10, b = 20;
 
-            Console.WriteLine("Before swapping:");
-            Console.WriteLine("a: " + a);
-            Console.WriteLine("b: " + b);
+//            Console.WriteLine("Before swapping:");
+//            Console.WriteLine("a: " + a);
+//            Console.WriteLine("b: " + b);
 
-            Swap(ref a, ref b);
+//            Swap(ref a, ref b);
 
-            Console.WriteLine("\nAfter swapping:");
-            Console.WriteLine("a: " + a);
-            Console.WriteLine("b: " + b);
-        }
+//            Console.WriteLine("\nAfter swapping:");
+//            Console.WriteLine("a: " + a);
+//            Console.WriteLine("b: " + b);
+//        }
 
-        static void Swap(ref int x, ref int y)
-        {
-            int temp = x;
-            x = y;
-            y = temp;
-        }
+//        static void Swap(ref int x, ref int y)
+//        {
+//            int temp = x;
+//            x = y;
+//            y = temp;
+//        }
 
-        //Output:
-        //Before swapping:
-        //a: 10
-        //b: 20
-        //After swapping:
-        //a: 20
-        //b: 10
+//        //Output:
+//        //Before swapping:
+//        //a: 10
+//        //b: 20
+//        //After swapping:
+//        //a: 20
+//        //b: 10
 
-    }
+//    }
 
-}
+//}
 
 /////Output Parameters/////
-namespace CSharp_Basics
-{
-    internal class Program
-    {
-        static void Main(string[] args)
-        {
-            int a = 10, b = 20, sum, mul; //sum and mul arent initialized
-        }
+//namespace CSharp_Basics
+//{
+//    internal class Program
+//    {
+//        static void Main(string[] args)
+//        {
+//            int a = 10, b = 20, sum, mul; //sum and mul arent initialized
+//        }
 
-        static void Calculate(int a, int b, out int sum, out int mul)
-        {
-            sum = a + b;
-            mul = a * b;
-        }
+//        static void Calculate(int a, int b, out int sum, out int mul)
+//        {
+//            sum = a + b;
+//            mul = a * b;
+//        }
 
-        //Output:
-        //Sum = 30
-        //Mul = 200
+//        //Output:
+//        //Sum = 30
+//        //Mul = 200
 
-    }
+//    }
 
-}
+//}
 
 /////Parameter Arrays/////
-namespace CSharp_Basics
-{
-    internal class Program
-    {
-        static void Main(string[] args)
-        {
-            int[] numbers = { 101, 102, 103 };
+//namespace CSharp_Basics
+//{
+//    internal class Program
+//    {
+//        static void Main(string[] args)
+//        {
+//            int[] numbers = { 101, 102, 103 };
 
-            PrintArray(numbers); //Passing arguments as an array to PrintArray method (Parameter Array).
-            PrintArray(0, 1, 2, 3, 4, 5, 6, 7, 8, 9); //Passing arguments as a comma separated list to PrintArray method
-        }
+//            PrintArray(numbers); //Passing arguments as an array to PrintArray method (Parameter Array).
+//            PrintArray(0, 1, 2, 3, 4, 5, 6, 7, 8, 9); //Passing arguments as a comma separated list to PrintArray method
+//        }
 
-        static void PrintArray(params int[] num)
-        {
-            Console.WriteLine("Number of elements: " + num.Length);
+//        static void PrintArray(params int[] num)
+//        {
+//            Console.WriteLine("Number of elements: " + num.Length);
 
-            foreach (int i in num)
-                Console.Write(i + " ");
-        }
+//            foreach (int i in num)
+//                Console.Write(i + " ");
+//        }
 
-        //Output:
-        //Number of elements: 3
-        //101 102 103
+//        //Output:
+//        //Number of elements: 3
+//        //101 102 103
 
-        //Number of elements: 10
-        //0 1 2 3 4 5 6 7 8 9
+//        //Number of elements: 10
+//        //0 1 2 3 4 5 6 7 8 9
 
-    }
+//    }
 
-}
+//}
 
 /////Named Arguments/////
 //Simple method definition
 
-    static string PersonInfo(string name, int age) {
-        Console.WriteLine("Name = " + name);
-        Console.WriteLine("Age = " + age);
-    }
+//    static string PersonInfo(string name, int age) {
+//        Console.WriteLine("Name = " + name);
+//        Console.WriteLine("Age = " + age);
+//    }
 
-//Calling the method without any named arguments (like we did so far)
-PersonInfo("John", 34);
+////Calling the method without any named arguments (like we did so far)
+//PersonInfo("John", 34);
 
-//Calling the method with named arguments
-PersonInfo(age: 34, name: "John");
+////Calling the method with named arguments
+//PersonInfo(age: 34, name: "John");
 
 
 /////Optional Arguments/////
@@ -791,37 +791,113 @@ PersonInfo(age: 34, name: "John");
 
 //Different ways to call a method with optional arguments
 
-static void PersonInfo(string name = "John", int age = 21) {
-    Console.WriteLine("Name = " + name);
-    Console.WriteLine("Age = " + age);
-}
+//static void PersonInfo(string name = "John", int age = 21) {
+//    Console.WriteLine("Name = " + name);
+//    Console.WriteLine("Age = " + age);
+//}
 
 //1. Omit the optional parameters
-PersonInfo();
+//PersonInfo();
 
 //2. Omit second optional parameter
-PersonInfo("Mark");
+//PersonInfo("Mark");
 
 //3. You CAN'T omit the first but keep the second
-PersonInfo(37); //Not Allowed
+//PersonInfo(37); //Not Allowed
 
 //4. Classic calling syntax
-PersonInfo("Mark", 37);
+//PersonInfo("Mark", 37);
 
 //5. Specify one named parameter
-PersonInfo(age: 37);
+//PersonInfo(age: 37);
 
 //6. Specify both named parameter
-PersonInfo(age: 37, name: "Mark");
+//PersonInfo(age: 37, name: "Mark");
 
 
 /////Expression-Bodied Methods/////
 
 //Regular methods
-public double FindSquare(double num) {
-    return num * num;
-}
+//public double FindSquare(double num) {
+//    return num * num;
+//}
 
 //Expression-Bodied Method
-public double FindSquare(double num) => num * num; 
+//public double FindSquare(double num) => num * num; 
+
+/////Enumeration in C# (Enums)/////
+
+
+ //Defining an Enum
+    public enum Color {
+        Red,  // 0
+        Green,  // 1 
+        Blue  // 2
+    }
+/*
+ *By default, the first member gets the value 0, the second gets 1, and so on 
+ */
+
+//Using an enum
+
+/*
+* You create a variable of that enum type and assign it one of the named constants
+*/
+
+Color c = Color.Red;
+Console.WriteLine(c); //Output: Red
+
+// Why use enums?
+/*They make your code easier to read and maintain. 
+Instead of using raw numbers, you use meaningful names like Red, Green, Blue.
+
+Enums are perfect for scenarios where you have a fixed set of values—like days of the week, 
+months, card suits, etc.—because these values don’t change over time.
+*/
+
+// Enums behind the scenes
+/*
+An enum is actually backed by an integer type (by default, int);
+If you need a different size (like byte, short, or long), you can specify it:
+*/
+
+public enum Day : short {
+    Sunday, 
+    Monday, 
+    Tuesday,
+    Wednesday, 
+    Thursday, 
+    Friday, 
+    Saturday
+}
+
+/*
+* Even when using different underlying types, the concept stays the same.
+*/
+
+// Getting the numeric value
+/*
+* If you want to see the integer behind, for example, Day.Sunday, you do a cast:
+*/
+
+Console.WriteLine((int)Day.Sunday); // prints the number 0 (or a custom value if changed)
+
+//Custom integer values
+/*
+* You don’t have to stick to 0, 1, 2... You can assign your own numbers to each enum member:
+*/
+
+enum Day
+{
+    Sunday = 10,
+    Monday = 2,
+    Tuesday = 8,
+    // etc.
+}
+
+/*
+* If you give the first member a number (e.g., Sunday = 10) but leave the rest unassigned, 
+  they automatically follow on from there (Monday = 11, Tuesday = 12, and so on).
+* Or you can assign random values anywhere. C# doesn’t enforce a sequence.
+*/
 
